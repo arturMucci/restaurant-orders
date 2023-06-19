@@ -10,7 +10,7 @@ def test_ingredient():
     ingredient3 = Ingredient(name2)
 
     assert ingredient1.name == name1
-    assert ingredient1 == ingredient2
+    assert ingredient1.__eq__(ingredient2)
     assert ingredient1.__hash__() == ingredient2.__hash__()
     assert ingredient1.__hash__() != ingredient3.__hash__()
     assert ingredient1.__repr__() == "Ingredient('queijo mussarela')"
