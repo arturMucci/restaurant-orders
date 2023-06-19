@@ -13,7 +13,7 @@ def test_ingredient():
     assert ingredient1.__eq__(ingredient2)
     assert ingredient1.__hash__() == ingredient2.__hash__()
     assert ingredient1.__hash__() != ingredient3.__hash__()
-    assert ingredient1.__repr__() == "Ingredient('queijo mussarela')"
+    assert ingredient1.__repr__() == f"Ingredient('{name1}')"
     assert ingredient1.restrictions == {
         Restriction.LACTOSE,
         Restriction.ANIMAL_DERIVED,
