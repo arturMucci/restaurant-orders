@@ -5,7 +5,6 @@ from services.menu_builder import MenuBuilder
 
 app = FastAPI(title="Restaurante Chapa Quente")
 menu_builder = MenuBuilder()
-# PR
 
 restriction_options = {k: {"value": k} for k in Restriction._member_names_}
 

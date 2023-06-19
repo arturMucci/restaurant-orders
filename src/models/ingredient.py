@@ -17,21 +17,48 @@ class Restriction(Enum):
 
 def restriction_map():
     return {
-        "queijo mussarela": {Restriction.LACTOSE, Restriction.ANIMAL_DERIVED},
-        "farinha": {Restriction.GLUTEN},
-        "bacon": {Restriction.ANIMAL_MEAT, Restriction.ANIMAL_DERIVED},
-        "manteiga": {Restriction.LACTOSE, Restriction.ANIMAL_DERIVED},
-        "caldo de carne": {Restriction.ANIMAL_DERIVED},
+        "queijo mussarela": {
+            Restriction.LACTOSE,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "farinha": {
+            Restriction.GLUTEN,
+        },
+        "bacon": {
+            Restriction.ANIMAL_MEAT,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "manteiga": {
+            Restriction.LACTOSE,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "caldo de carne": {
+            Restriction.ANIMAL_DERIVED,
+        },
         "camarão": {
             Restriction.ANIMAL_MEAT,
             Restriction.SEAFOOD,
             Restriction.ANIMAL_DERIVED,
         },
-        "carne": {Restriction.ANIMAL_MEAT, Restriction.ANIMAL_DERIVED},
-        "creme de leite": {Restriction.LACTOSE, Restriction.ANIMAL_DERIVED},
-        "frango": {Restriction.ANIMAL_MEAT, Restriction.ANIMAL_DERIVED},
-        "ovo": {Restriction.ANIMAL_DERIVED},
-        "queijo gorgonzola": {Restriction.LACTOSE, Restriction.ANIMAL_DERIVED},
+        "carne": {
+            Restriction.ANIMAL_MEAT,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "creme de leite": {
+            Restriction.LACTOSE,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "frango": {
+            Restriction.ANIMAL_MEAT,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "ovo": {
+            Restriction.ANIMAL_DERIVED,
+        },
+        "queijo gorgonzola": {
+            Restriction.LACTOSE,
+            Restriction.ANIMAL_DERIVED,
+        },
         "salmão": {
             Restriction.ANIMAL_MEAT,
             Restriction.SEAFOOD,
@@ -41,10 +68,22 @@ def restriction_map():
             Restriction.ANIMAL_MEAT,
             Restriction.ANIMAL_DERIVED,
         },
-        "queijo parmesão": {Restriction.LACTOSE, Restriction.ANIMAL_DERIVED},
-        "queijo provolone": {Restriction.LACTOSE, Restriction.ANIMAL_DERIVED},
-        "massa de lasanha": {Restriction.LACTOSE, Restriction.GLUTEN},
-        "massa de ravioli": {Restriction.LACTOSE, Restriction.GLUTEN},
+        "queijo parmesão": {
+            Restriction.LACTOSE,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "queijo provolone": {
+            Restriction.LACTOSE,
+            Restriction.ANIMAL_DERIVED,
+        },
+        "massa de lasanha": {
+            Restriction.LACTOSE,
+            Restriction.GLUTEN,
+        },
+        "massa de ravioli": {
+            Restriction.LACTOSE,
+            Restriction.GLUTEN,
+        },
     }
 
 
